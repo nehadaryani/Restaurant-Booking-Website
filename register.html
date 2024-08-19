@@ -18,12 +18,21 @@
             <form class="signup-form">
                 <h2><u>BOOK YOUR TABLE</u></h2>
                 
-                <input type="email" placeholder="Your Name" required><br>
-                <input type="password" placeholder="Your Phone Number" required><br>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+               <label for="phone">Your Phone:</label>
+               <input type="tel" id="phone" name="phone" required>
                 <!--<input type="password" placeholder="Number of People" required>-->
-                <label for="fname">Number of People:</label>
-                <label for="fname">Date:</label>
-                <input type="date" placeholder="Date" required><br>
+               <label for="location">Location:</label>
+               <select id="location" name="location" required>
+               <option value="">Select a location</option>
+              <option value="location1">Location 1</option>
+              <option value="location2">Location 2</option>
+        </select>
+                 <label for="people">People:</label>
+                 <input type="number" id="people" name="people" min="1" value="1" required>
+                <label for="date-time">Date & Time:</label>
+                <input type="datetime-local" id="date-time" name="date-time" required>
                 <button type="submit">Book a Table</button><br>
                 <p>Already have an account? <a href="login.html">Login</a></p>
                <!-- <div class="separator">
